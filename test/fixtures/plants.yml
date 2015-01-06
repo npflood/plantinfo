@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  english_common_name: MyString
+  other_common_names: MyString
+  latin_name: MyString
+  family_names: MyString
+  description: MyText
+  origin: MyText
+  uses: MyText
+  cultivation: MyText
+  harvesting_and_seed_production: MyText
+  pests_and_diseases: MyText
+  cooking_and_nutrition: MyText
+
+two:
+  english_common_name: MyString
+  other_common_names: MyString
+  latin_name: MyString
+  family_names: MyString
+  description: MyText
+  origin: MyText
+  uses: MyText
+  cultivation: MyText
+  harvesting_and_seed_production: MyText
+  pests_and_diseases: MyText
+  cooking_and_nutrition: MyText

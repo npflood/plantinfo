@@ -1,0 +1,61 @@
+<%= form_for(@plant) do |f| %>
+  <% if @plant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@plant.errors.count, "error") %> prohibited this plant from being saved:</h2>
+
+      <ul>
+      <% @plant.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :english_common_name %><br>
+    <%= f.text_field :english_common_name %>
+  </div>
+  <div class="field">
+    <%= f.label :other_common_names %><br>
+    <%= f.text_field :other_common_names %>
+  </div>
+  <div class="field">
+    <%= f.label :latin_name %><br>
+    <%= f.text_field :latin_name %>
+  </div>
+  <div class="field">
+    <%= f.label :family_names %><br>
+    <%= f.text_field :family_names %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :origin %><br>
+    <%= f.text_area :origin %>
+  </div>
+  <div class="field">
+    <%= f.label :uses %><br>
+    <%= f.text_area :uses %>
+  </div>
+  <div class="field">
+    <%= f.label :cultivation %><br>
+    <%= f.text_area :cultivation %>
+  </div>
+  <div class="field">
+    <%= f.label :harvesting_and_seed_production %><br>
+    <%= f.text_area :harvesting_and_seed_production %>
+  </div>
+  <div class="field">
+    <%= f.label :pests_and_diseases %><br>
+    <%= f.text_area :pests_and_diseases %>
+  </div>
+  <div class="field">
+    <%= f.label :cooking_and_nutrition %><br>
+    <%= f.text_area :cooking_and_nutrition %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
