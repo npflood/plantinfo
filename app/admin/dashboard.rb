@@ -11,11 +11,20 @@ ActiveAdmin.register_page "Dashboard" do
     # end
     div class: "blank_slate_container", id: "main" do
         span class: "blank_slate" do
-            span "Welcome to the ECHO Plant Information Workcenter"
+            h3 "Welcome to the ECHO Plant Information Workcenter"
+            h4 do
+                a(href: "https://s3.amazonaws.com/docs.echocommunity.org/Plant+Information+Sheets/Plant+Info+Sheets.zip") do
+                    "Download The Plant Information Sheet Files"
+                end
+            end
+            h4 do
+                a(href: "/admin/plants") do
+                    "Go To Plant Information Sheet Entry Form"
+                end
+            end
             small "For help with this system please contact Nate Flood at 239-823-7316."
         end
     end
-
 
 
     # Here is an example of a simple dashboard with columns and panels.

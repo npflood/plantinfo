@@ -12,54 +12,54 @@ class PlantsController < ApplicationController
   def show
   end
 
-  # GET /plants/new
-  def new
-    @plant = Plant.new
-  end
+  # # GET /plants/new
+  # def new
+  #   @plant = Plant.new
+  # end
 
-  # GET /plants/1/edit
-  def edit
-  end
+  # # GET /plants/1/edit
+  # def edit
+  # end
 
-  # POST /plants
-  # POST /plants.json
-  def create
-    @plant = Plant.new(plant_params)
+  # # POST /plants
+  # # POST /plants.json
+  # def create
+  #   @plant = Plant.new(plant_params)
 
-    respond_to do |format|
-      if @plant.save
-        format.html { redirect_to @plant, notice: 'Plant was successfully created.' }
-        format.json { render :show, status: :created, location: @plant }
-      else
-        format.html { render :new }
-        format.json { render json: @plant.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  #   respond_to do |format|
+  #     if @plant.save
+  #       format.html { redirect_to @plant, notice: 'Plant was successfully created.' }
+  #       format.json { render :show, status: :created, location: @plant }
+  #     else
+  #       format.html { render :new }
+  #       format.json { render json: @plant.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
 
-  # PATCH/PUT /plants/1
-  # PATCH/PUT /plants/1.json
-  def update
-    respond_to do |format|
-      if @plant.update(plant_params)
-        format.html { redirect_to @plant, notice: 'Plant was successfully updated.' }
-        format.json { render :show, status: :ok, location: @plant }
-      else
-        format.html { render :edit }
-        format.json { render json: @plant.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  # # PATCH/PUT /plants/1
+  # # PATCH/PUT /plants/1.json
+  # def update
+  #   respond_to do |format|
+  #     if @plant.update(plant_params)
+  #       format.html { redirect_to @plant, notice: 'Plant was successfully updated.' }
+  #       format.json { render :show, status: :ok, location: @plant }
+  #     else
+  #       format.html { render :edit }
+  #       format.json { render json: @plant.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
 
-  # DELETE /plants/1
-  # DELETE /plants/1.json
-  def destroy
-    @plant.destroy
-    respond_to do |format|
-      format.html { redirect_to plants_url, notice: 'Plant was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
+  # # DELETE /plants/1
+  # # DELETE /plants/1.json
+  # def destroy
+  #   @plant.destroy
+  #   respond_to do |format|
+  #     format.html { redirect_to plants_url, notice: 'Plant was successfully destroyed.' }
+  #     format.json { head :no_content }
+  #   end
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.
