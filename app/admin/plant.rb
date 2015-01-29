@@ -13,7 +13,7 @@ ActiveAdmin.register Plant do
   #   permitted << :other if resource.something?
   #   permitted
   # end
-  permit_params :english_common_name, :other_common_names, :latin_name, :family_names, :description, :origin, :uses, :cultivation, :harvesting_and_seed_production, :pests_and_diseases, :cooking_and_nutrition
+  permit_params :english_common_name, :other_common_names, :latin_name, :family_names, :description, :origin, :uses, :cultivation, :harvesting_and_seed_production, :pests_and_diseases, :cooking_and_nutrition, :categories
 
   index do
     column "Name", :english_common_name
